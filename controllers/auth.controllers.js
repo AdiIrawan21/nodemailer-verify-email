@@ -2,7 +2,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 const bcrypt = require("bcrypt")
 const jwt = require('jsonwebtoken');
-const { getHTML } = require("../libs/nodemailer");
+const { getHTML, sendMail } = require("../libs/nodemailer");
 const { JWT_SECRET_KEY } = process.env;
 
 module.exports = {
@@ -152,7 +152,14 @@ module.exports = {
             let url = `http://localhost:3000/api/v1/verify?token=${token}`;
             console.log(url);
             let html = await getHTML('verification-code.ejs', { name: 'adi', verification_url: url });
-            res.send(html);
+
+            // kirim ke email
+            await sendMail(req.user.email, 'Verification Email', html);
+
+            return res.json({
+                status: true,
+                message: 'success',
+            });
 
         } catch (error) {
             next(error);

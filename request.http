@@ -3,9 +3,9 @@ POST http://localhost:3000/api/v1/register
 Content-Type: application/json
 
 {
-    "name":"adi",
-    "email":"adiirwn10@mail.com",
-    "password":"adi123123"
+    "name":"Adi Irawan",
+    "email":"adiirawan01012003@mail.com",
+    "password":"adi123"
 }
 
 ### login
@@ -13,16 +13,16 @@ POST http://localhost:3000/api/v1/login
 Content-Type: application/json
 
 {
-    "email":"adiirwn10@mail.com",
-    "password":"adi123123"
+    "email":"adiirawan01012003@mail.com",
+    "password":"adi123"
 }
 
 ### whoami
 GET http://localhost:3000/api/v1/whoami
 # Authorization: Bearer tokentoken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaSIsImVtYWlsIjoiYWRpaXJ3bjEwQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOnRydWUsImlhdCI6MTcxNTc4MDc2M30.zMzhWolI2efs4dclAW0_91AGFsxov_1p9gSxCyDSc5c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkFkaSBJcmF3YW4iLCJlbWFpbCI6ImFkaWlyYXdhbjAxMDEyMDAzQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOnRydWUsImlhdCI6MTcxNTc4Mjk5M30.l_cedc52viJ3r1ajg6aXrRJIH2AzHMpCz4RGFDHKxzI
 
 ### request verify email
 GET http://localhost:3000/api/v1/request-verify
 # Authorization: Bearer tokentoken
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaSIsImVtYWlsIjoiYWRpaXJ3bjEwQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE3MTU3ODA2Nzh9.jU2bR1UWiIFxedp1B9ou_jfvm4MloCut6yeGUI9_yi8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkFkaSBJcmF3YW4iLCJlbWFpbCI6ImFkaWlyYXdhbjAxMDEyMDAzQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE3MTU3ODI3OTd9.V7j2mshq7H1KMBy1dFtiD0Xjlw6Cz1h1l92pSF85_kk
