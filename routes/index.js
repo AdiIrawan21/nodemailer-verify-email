@@ -6,6 +6,7 @@ const { register, login, whoami, verifyEmail, requestVerifyEmail } = require('..
 router.post('/register', register);
 router.post('/login', login);
 router.get('/whoami', restric, whoami);
+
 router.get('/verify', verifyEmail);
 router.get('/request-verify', requestVerifyEmail);
 module.exports = router;
