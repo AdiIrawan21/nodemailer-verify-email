@@ -8,5 +8,5 @@ router.post('/login', login);
 router.get('/whoami', restric, whoami);
 
 router.get('/verify', verifyEmail);
-router.get('/request-verify', requestVerifyEmail);
+router.get('/request-verify', restric, requestVerifyEmail);
 module.exports = router;

@@ -146,7 +146,7 @@ module.exports = {
     requestVerifyEmail: async (req, res, next) => {
         try {
             // generate token untuk url verifikasi
-            let token = jwt.sign({ id: req.user.id });
+            let token = jwt.sign({ id: req.user.id }, JWT_SECRET_KEY);
 
             // // generate url untuk verifikasi
             let url = `http://localhost:3000/api/v1/verify?token=${token}`;

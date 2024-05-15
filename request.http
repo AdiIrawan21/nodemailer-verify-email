@@ -21,3 +21,8 @@ Content-Type: application/json
 GET http://localhost:3000/api/v1/whoami
 # Authorization: Bearer tokentoken
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaSIsImVtYWlsIjoiYWRpaXJ3bjEwQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE3MTU3Nzk3MzZ9.GWXDw0X8j4hprHY4f3Nk5tzAt82U-3nNUHO2kUP9SU4
+
+### request verify email
+GET http://localhost:3000/api/v1/request-verify
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaSIsImVtYWlsIjoiYWRpaXJ3bjEwQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE3MTU3Nzk3MzZ9.GWXDw0X8j4hprHY4f3Nk5tzAt82U-3nNUHO2kUP9SU4
