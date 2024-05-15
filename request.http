@@ -1,0 +1,23 @@
+### register
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+    "name":"adi",
+    "email":"adiirwn10@mail.com",
+    "password":"adi123123"
+}
+
+### login
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+    "email":"adiirwn10@mail.com",
+    "password":"adi123123"
+}
+
+### whoami
+GET http://localhost:3000/api/v1/whoami
+# Authorization: Bearer tokentoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkaSIsImVtYWlsIjoiYWRpaXJ3bjEwQG1haWwuY29tIiwiaXNfdmVyaWZpZWQiOmZhbHNlLCJpYXQiOjE3MTU3Nzk2MTd9.6z3bmo4tR7FUbjzHQ8AKJ11szrlvI1gAj1GwGx_DGgs
